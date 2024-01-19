@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="./netflix.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        *
+        {
+            font-family: 'Poppins', sans-serif;
+        }
+        body
+        {
+            background: #000;
+        }
+        .container
+        {
+            height: 130vh;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url(./NF\ -BG.webp);
+            width: 100%;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+        .form
+        {
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .logo
+        {
+            position: relative;
+            top: -8vh;
+            left: -30%;
+        }
+        .form-in 
+        {
+            height: 40vh;
+            width: 100%;
+            position: relative;
+            top: -8vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .form-in h1
+        {
+            font-weight: 500;
+            font-size: 35px;
+            margin-left: -50%;
+        }
+        p
+        {
+            font-size: 15px;
+        }
+        input
+        {
+            margin-top: 1.5vh;
+            width: 80%;
+            padding: 2vh;
+            background-color: rgba(51, 51, 51, 0.479);
+            border: none;
+            border-radius: 5px;
+        }
+        ::placeholder
+        {
+            color: white;
+            font-size: 15px;
+        }
+        button
+        {
+            background-color: red;
+            height: 8vh;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 88%;
+            padding: 2vh;
+        }
+        label
+        {
+            font-size: 15px;
+            position: relative;
+            top: -5.3vh;
+            color: gray;
+        }
+        .a1
+        {
+            font-size: 15px;
+            position: relative;
+            top: -5.3vh;
+            left: 16%;
+            text-decoration: none;
+            color: gray;
+        }
+        .row-2 input
+        {
+            position: relative;
+            left: -48%;
+        }
+        .a2
+        {
+            font-size: 15px;
+            margin-left: -15%;
+            color: gray;
+            text-decoration: none;
+        }
+        .a3
+        {
+            font-size: 15px;
+            margin-left: 0%;
+            color: white;
+            text-decoration: none;
+        }
+        .row-footer
+        {
+            font-size: 15px;
+            display: inline;
+            margin-left: 5%;
+            
+        }
+        .row-footer a
+        {
+           text-decoration: none;
+        }
+        .img
+        {
+            display: none;
+        }
+        button a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width:426px)
+        {
+            .container
+            {
+                height: 100vh;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+         .container
+         {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }   
+         .form
+         {
+            height: 100vh;
+            position: relative;
+            top: 5vh;
+            width: 60%;
+            background-color: #0000008b;
+         }
+         .logo
+         {
+            display: none;
+         }
+         .img
+         {
+            display: inline;
+            position: relative;
+            top: -108vh;
+            height: 8vh;
+            left: -38%;
+         }
+        }
+
+
+        @media screen and (min-width:1024px) 
+        {
+          .container
+         {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }  
+         .form
+         {
+            width: 30%;
+         }
+         .row-2 input
+         {
+           position: relative;
+           top: -2vh;
+           left: -70%;
+         }
+         label
+         {
+            position: relative;
+           left: -23%;  
+         }
+         .row-2 a
+         {
+            position: relative;
+            left: 30%;
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form">
+            <div class="logo">
+                <img src="./nf logo.png" height="30" alt="">
+            </div>
+            <div class="form-in">
+                <h1>Sign In</h1>
+                <input type="text" placeholder="Email or Phone number">
+                <input type="password" name="" id="" placeholder="Password"><br>
+                <button><a href="https://www.netflix.com/search?q=telugumovies">Sign In</a></button>
+            </div>
+            <div class="row-2">
+                <input type="checkbox" name="" id="" checked><label for="">Remember me</label>
+                <a class="a1" href="#">Need help?</a>
+            </div>
+            <div class="row-3">
+                <a class="a2" href="#">New to Netflix?</a>
+                <a class="a3" href="index.html">Sign Up now</a>
+            </div>
+            <div class="row-footer">
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#"> Learn more.</a></p>
+            </div>
+        </div>
+        <img class="img" src="./nf logo.png" height="30" alt="">
+    </div>
+ 
+   
+</body>
+</html>
